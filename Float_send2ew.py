@@ -4,7 +4,7 @@ import numpy as np
 import struct
 import serial
 
-PuertoSerie = serial.Serial('/dev/ttyUSB0', 9600)
+PuertoSerie = serial.Serial('/dev/ttyUSB0', 115200)
 tm.sleep(1)
 
 logging.getLogger().addHandler(logging.StreamHandler())
@@ -25,7 +25,7 @@ while True :
 	'channel': 'LK',
 	'location': '01',
 	'nsamp': 1,
-	'samprate': 1,
+	'samprate': 100,
 	'startt': tm.mktime(tm.gmtime()),
 	'datatype': 'i4',
     'data': a
@@ -34,6 +34,6 @@ while True :
 	MyModule.put_wave(1, mywave)
 	#print (mywave)
 	print (a)
-	tm.sleep(1)
+	tm.sleep(0.1)
 	pass  
   
