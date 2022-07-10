@@ -28,7 +28,7 @@ while True :
 	'samprate': 100,
 	'startt': tm.mktime(tm.gmtime()),
 	'datatype': 'i4',
-    'data': a
+        'data': a
 	}
 	
 	MyModule.put_wave(1, mywave)
