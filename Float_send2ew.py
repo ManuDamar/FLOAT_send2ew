@@ -20,7 +20,7 @@ while True :
 	a = np.array([mud])
 	
 	mywave =  {
-	'station': 'MUDA',
+	'station': 'OSVM',
 	'network': 'UV',
 	'channel': 'LK',
 	'location': '01',
